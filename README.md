@@ -16,7 +16,7 @@ Con el comando `git clone https://github.com/cdanisuarez/ourbank.git` se creara 
 ## 3. Instalar paquetes npm
 Ejecute el comando `npm install` se instalaran las librerías o paquetes de *node*.
 
-## 3. Iniciar aplicación
+## 4. Iniciar aplicación
 - Ingrese a la carpeta que se clono en el punto anterior.
 - Ejecute `ng serve` para iniciar la aplicación.
 - Ingrese al navegador y ponga la siguiente URL `http://localhost:4200/`
