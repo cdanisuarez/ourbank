@@ -1,27 +1,21 @@
-# ourbank
+# OurBank
+A continuación, se hace una explicación del despliegue de la aplicación OurBank.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.4.
+## 1. Prerrequisitos
+Con el objetivo de que la aplicación funcione correctamente debera tener las siguientes especificaciones en su equipo:
+|Nombre     |Versión|
+|-----------|-------|
+|Node.js    |10.16.0|
+|Angular CLI|8.0.4  |
 
-## Development server
+## 2. Clonar repositorio
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Con el comando `git clone https://github.com/cdanisuarez/ourbank.git` se creara una copia de este repositorio.
 
-## Code scaffolding
+## 3. Instalar paquetes npm
+Ejecute el comando `npm install` se instalaran las librerías o paquetes de *node*.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## 3. Iniciar aplicación
+- Ingrese a la carpeta que se clono en el punto anterior.
+- Ejecute `ng serve` para iniciar la aplicación.
+- Ingrese al navegador y ponga la siguiente URL `http://localhost:4200/`
