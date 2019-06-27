@@ -1,0 +1,39 @@
+.register-form {
+  position: absolute;
+  margin-top: 12%;
+  margin-left: 35%;
+  width: 31%;
+  background-color: #ffffff;
+  padding: 3%;
+  border-radius: 8px;
+
+  .title-register {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .form-group {
+    .form-control:focus {
+      border-color: #C1DBB3;
+      box-shadow: 0 0 0 0.2rem rgba(193, 219, 179, 0.43);
+    }
+
+    .form-text {
+      color: #fe5d26 !important;
+    }
+  }
+
+  .btn-register {
+    text-align: center;
+
+    input {
+      background-color: #FE5D26;
+      border-color: #FE5D26;
+    }
+
+    input:active {
+      background-color: #FE5D26;
+      border-color: #FE5D26;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<form [formGroup]="registerForm" class="register-form" (ngSubmit)="onRegister()">
+  <div class="title-register">
+    <h5>¿Deseas registrarte? Llena el siguiente formulario</h5>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="identification" formControlName="identification"
+      placeholder="Identificación">
+    <small *ngIf="isSubmitted && formControls.identification.errors"
+      class="form-text text-muted">* {{EMPTY_FIELD}}</small>
+    <small *ngIf="isSubmitted && formControls.identification.errors.pattern"
+      class="form-text text-muted">* {{IDENTIFICATION_INVALID}}</small>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="firstname" formControlName="firstname" placeholder="Nombre">
+    <small *ngIf="isSubmitted && formControls.firstname.errors" id="nameHelp"
+      class="form-text text-muted">* {{EMPTY_FIELD}}</small>
+  </div>
+  <div class="form-group">
+    <input type="lastname" class="form-control" id="lastname" formControlName="lastname" placeholder="Apellido">
+    <small *ngIf="isSubmitted && formControls.lastname.errors" id="lastnameHelp"
+      class="form-text text-muted">* {{EMPTY_FIELD}}</small>
+  </div>
+  <div class="form-group">
+    <div class="input-group">
+      <input class="form-control" id="birthdate" formControlName="birthdate" placeholder="Fecha de nacimiento" name="dp" ngbDatepicker #d="ngbDatepicker">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button">
+          <fa name="calendar"></fa>
+        </button>
+      </div>
+    </div>
+    <small *ngIf="isSubmitted && formControls.birthdate.errors" id="birthdateHelp"
+      class="form-text text-muted">* {{EMPTY_FIELD}}</small>
+  </div>
+  <div class="btn-register">
+    <input type="submit" class="btn btn-primary" value="Registrarme" />
+  </div>
+</form>
