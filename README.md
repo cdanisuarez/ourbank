@@ -3,6 +3,7 @@ A continuación, se hace una explicación del despliegue de la aplicación OurBa
 
 ## 1. Prerrequisitos
 Con el objetivo de que la aplicación funcione correctamente debera tener las siguientes especificaciones en su equipo:
+
 |Nombre     |Versión|
 |-----------|-------|
 |Node.js    |10.16.0|
